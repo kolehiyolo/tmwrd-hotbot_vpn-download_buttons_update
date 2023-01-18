@@ -1,0 +1,81 @@
+#robot, #shade {
+    animation: MoveUpDown 5s linear infinite;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+#robot-foot-swadow {
+    animation: Opacity 5s linear infinite;
+    transition: all 5s ease-in-out;
+}
+
+#shoulder-left {
+    animation: WaivingHandLeft 3s linear infinite;
+    position: relative;
+    transition: all 3s ease-in-out;
+    transform-origin: center
+}
+
+#shoulder-right {
+    animation: WaivingHandRight 3s linear infinite;
+    position: relative;
+    transition: all 3s ease-in-out;
+    transform-origin: center
+}
+
+#robot-foot {
+    animation: FootScale 5s linear infinite;
+    transition: all 5s ease-in-out;
+    transform-origin: bottom;
+}
+  
+@keyframes WaivingHandLeft {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+        
+    }
+}
+
+
+@keyframes WaivingHandRight {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+        
+    }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(-50px);
+        
+    }
+}
+
+@keyframes Opacity {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        
+    }
+}
+
+@keyframes FootScale {
+    0%, 100% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+        
+    }
+}

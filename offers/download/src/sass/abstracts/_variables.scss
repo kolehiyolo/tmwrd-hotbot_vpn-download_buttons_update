@@ -1,0 +1,39 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+
+$primary-color: #363a3d;
+$secondary-color: #112633; //used on chrome banner
+$tertiary-color: #071d2b; // used on footer bg
+$accent-color: #ff7800; 
+$accent-color-2: #43a047; //used on button 
+$accent-color-2-h: #3b8e3f; //used on button hover
+
+// text color
+$text-color: #071d2b;
+$text-color-light: #ffffff;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family: 'MierB-Regular', "Helvetica", arial, sans-serif !important;
+$font-family-bold: 'MierB-Bold', "Helvetica", arial, sans-serif !important;
+$font-family-black: 'MierB-Black', "Helvetica", arial, sans-serif !important;

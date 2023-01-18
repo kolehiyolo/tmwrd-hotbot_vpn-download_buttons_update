@@ -1,0 +1,83 @@
+#Layer_12, #arm-r{
+    animation: WaivingHandLeft 5s linear infinite;
+    position: relative;
+    transition: all 5s ease-in-out;
+    transform-origin: center
+}
+
+#arm-l {
+    animation: WaivingHandRight 4s linear infinite;
+    position: relative;
+    transition: all 4s ease-in-out;
+    transform-origin: center
+}
+
+#cape {
+    position: relative;
+    transform-origin: center;
+    animation: Cape 3s linear infinite;
+    transition: all 3s ease-in-out;
+}
+
+#tail {
+    position: relative;
+    transform-origin: bottom right;
+    animation: FootScale 3s linear infinite;
+    transition: all 3s ease-in-out;
+}
+
+#tailShadow{
+    position: relative;
+    animation: TailShadow 2.5s linear infinite;
+    transition: opacity 2.5s ease-in-out;
+}
+
+@keyframes TailShadow {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes Cape {
+    0%,100% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(-10deg) scale(0.87);
+    }
+
+}
+
+@keyframes FootScale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+        
+    }
+}
+
+@keyframes WaivingHandLeft {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+        
+    }
+}
+
+@keyframes WaivingHandRight {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+        
+    }
+}

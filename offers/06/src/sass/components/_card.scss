@@ -1,0 +1,62 @@
+.card {
+    background-color: $color-white;
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+
+    @include breakpoints(medium) {
+
+        .btn {
+            font-size: .9rem;
+            padding: 1rem 1rem;
+
+            .icon {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+    
+
+    @include breakpoints(large) {
+        padding: 2rem;
+
+        .btn {
+            font-size: 1.225rem;
+            padding: 1.2rem 3rem;
+
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    &--height-100 {
+        height: 100%;
+    }
+
+    small {
+        color: #747474;
+        line-height: 1.1;
+        display: inline-block;
+    }
+
+    &--best-value {
+        background-color: #1D2F50;
+        border: 3px solid #1D2F50;
+        border-radius: 1.75rem;
+        font-size: 1.1rem;
+
+        @include breakpoints(medium) {
+            font-size: 0.8rem;
+        }
+
+        @include breakpoints(large) {
+            font-size: 1.1rem;
+        }
+
+        > span {
+            color: $color-white;
+        }
+    }
+}

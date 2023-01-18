@@ -1,0 +1,66 @@
+html[dir="rtl"] {
+
+    direction: rtl;
+    overflow-x: hidden;
+
+    .hero__logo {
+        margin-left: auto !important;
+        margin-right: 1.4rem;
+        display: block !important;
+    }
+
+    .feature span {
+        padding-right: 1rem;
+        padding-left: 0 !important;
+    }
+
+    .btn--primary span {
+        text-align: right;
+    }
+
+    .ac-pl {
+        padding-left: 1.5rem !important;
+        padding-right: 0 !important;
+    }
+
+    table {
+
+        thead tr th, tbody tr td, tfoot tr td {
+            border-right: 2px solid #ffddbf;
+            border-left-color: transparent !important;
+
+            &:last-of-type {
+                border-right: 2px solid #ff7800 !important;
+                border-left: 2px solid #ff7800 !important;
+            }
+        }
+
+        th {
+            text-align: right;
+        }
+    }
+
+    .thumb-ar-align {
+        @include breakpoints(s-large) {
+            text-align: right !important;
+        }
+    }
+
+    .footer__menu-mg {
+
+        @include breakpoints(s-large) {
+            margin-right: auto !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    .footer__menu {
+        a{
+            &:before {
+                left: unset;
+                right: -15px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,42 @@
+.card {
+    border-radius: 16px;
+    height: 100%;
+    border: 1px solid #95989a;
+    border-radius: 2px;
+    background-color: $color-white;
+
+    &--plan {
+
+        &__price {
+            font-size: 4rem;
+            font-family: $font-family-black;
+            line-height: 3.6rem;
+            margin: 0 .2rem;
+
+        }
+
+        .fs-x-small {
+            color: $text-color-lighter;
+        }
+
+        &.fine  {
+            border: 2px solid $tertiary-color;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+    }
+
+    &__span {
+        width: fit-content;
+        background-color: #ecf6e8;
+        color: $tertiary-color;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: .8rem 1.4rem;
+        border-radius: 20px;
+        font-family: $font-family-bold;
+        position: relative;
+        text-transform: uppercase;
+    }
+}

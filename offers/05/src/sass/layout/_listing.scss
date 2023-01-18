@@ -1,0 +1,11 @@
+.listing {
+    padding: 0;
+    
+    &__item {
+        .icon {
+            width: 15px;
+            height: 15px;
+            fill: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.text-align-md-left {
+
+    @include breakpoints(medium) {
+        text-align: left !important;
+    }
+}
+
+.fit-content {
+    max-width: fit-content;
+}

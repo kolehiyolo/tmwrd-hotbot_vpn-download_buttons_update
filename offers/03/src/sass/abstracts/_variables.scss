@@ -1,0 +1,55 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$primary-color: #1f2146;
+
+$accent-color: #fc0;
+$accent-color-light: #ffd633;
+
+$tertiary-color: #4ba920;
+$quinary-color: #2c2d43; // menu bg
+$senary-color: #323232; //secondary botton hover
+
+$bg-color: #f8f9fa;
+
+
+// text color
+$text-color: #1e1f2e;
+$text-color-light: #212529;
+$text-color-lighter: #6c6c6c;
+
+// used on footer, parent style, don't remove
+$text-color-4: #ced0d8;
+$text-color-5: #385b83;
+$secondary-color: #09225e; 
+$secondary-color-darken: #141f39;
+$quarternary-color: #374056;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family-light: 'Montserrat-ExtraLight', Open Sans, sans-serif;
+$font-family: 'Montserrat-Regular', "Raleway", Open Sans, sans-serif;
+$font-family-medium: 'Montserrat-SemiBold', Open Sans, sans-serif;
+$font-family-bold: 'Montserrat-Bold', Open Sans, sans-serif;
+$font-family-black: 'Montserrat-ExtraBold', Open Sans, sans-serif;

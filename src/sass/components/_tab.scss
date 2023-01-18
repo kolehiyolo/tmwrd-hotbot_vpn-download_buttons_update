@@ -1,0 +1,23 @@
+.tab {
+
+    li {
+        list-style-type: none;
+        margin-bottom: 0;
+
+        label {
+            padding: 1.5rem 3.5rem;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        &.checked {
+
+            label {
+                background-color: $primary-color;
+                color: $color-white;
+            }
+
+        }
+    }
+}

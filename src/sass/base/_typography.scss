@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('assets/fonts/notosans-regular-webfont.woff2') format('woff2'), url('assets/fonts/notosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+@font-face {
+    font-family: 'heeboblack';
+    src: url('assets/fonts/heebo-black-webfont.woff2') format('woff2'), url('assets/fonts/heebo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+/* latin */
+@font-face {
+    font-family: 'heebo_bold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('assets/fonts/heebo-bold-webfont.woff') format('woff');
+}
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.link-style-underline {
+        text-decoration: underline;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 3rem;
+
+    @include breakpoints(medium) {
+        margin-bottom: 2rem;
+    }
+
+    &.legend {
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        @include breakpoints(s-large) {
+            font-size: 2rem;
+        }
+    }
+}
+
+ol,
+ul {
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+ul {
+    &.no-list-style {
+        li {
+            margin-bottom: 0;
+            list-style: none;
+        }
+    }
+
+    li {
+        list-style-type: disc;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-2;
+    color: $text-color-2;
+    line-height: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+.h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+
+    @include breakpoints(medium) {
+        font-size: 4.3rem;
+        line-height: 5rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 5.3rem;
+        line-height: 6rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 6.5rem;
+        line-height: 7rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 3rem;
+
+    @include breakpoints(medium) {
+        font-size: 3.4rem;
+        line-height: 4rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 3.8rem;
+        line-height: 4rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 4.2rem;
+        line-height: 5rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 2.4rem;
+
+    @include breakpoints(medium) {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 2.8rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 2.2rem;
+
+    @include breakpoints(medium) {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.8rem;
+
+    @include breakpoints(medium) {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 1.6rem;
+
+    @include breakpoints(medium) {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+.bold {
+    font-family: $font-family-2;
+}
+
+.heading {
+    color: $text-color-2;
+
+    span {
+        color: $text-color-3;
+    }
+
+    &--light {
+        color: $color-white;
+    }
+
+    &--overline {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 30px;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+    }
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.small {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.x-small {
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.singleBlog a {
+    color: $primary-color;
+    text-decoration: underline;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,16 @@
+body #daextlwcnf-cookie-notice-container { padding: 10px 22px !important; width: calc(100% - 22px) !important; }
+body #daextlwcnf-cookie-notice-message { display: flex; align-items: center; }
+body #daextlwcnf-cookie-notice-message p { line-height: 1.3; }
+@media only screen and (max-width: 700px) {
+    body #daextlwcnf-cookie-notice-button-container {
+        display: flex !important
+    }
+    body #daextlwcnf-cookie-notice-button-1 {
+        width: calc(50% - 22px) !important;
+        margin: 10px 0 0 0 !important;
+    }
+    body #daextlwcnf-cookie-notice-button-2 {
+        margin: 10px 0 0 14px !important;
+        width: calc(50% - 22px) !important; 
+    }
+}

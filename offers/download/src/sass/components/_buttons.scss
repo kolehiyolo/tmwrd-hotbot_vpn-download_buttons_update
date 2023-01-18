@@ -1,0 +1,120 @@
+.btn {
+    padding: 1.7rem 2rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    min-width: 100px;
+    border-radius: 3px;
+    font-family: $font-family-bold;
+    font-size: 1.4rem;
+    white-space: normal;
+    line-height: 1.2;
+
+    @include breakpoints(s-medium) {
+        font-size: 1.6rem;
+    }
+
+    
+    @include breakpoints(large) {
+        font-size: 2.6rem;
+    }
+
+    &--sm {
+        font-size: .8rem;
+    }
+
+    &--primary {
+        background-color: $accent-color-2;
+        color: $color-white;
+        box-shadow: 0 2px 0 0 #1b5e20;
+
+        span {
+            font-family: $font-family;
+            font-size: .889rem;
+        }
+
+        &:hover {
+            background-color: $accent-color-2-h;
+        }
+
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+        fill: $text-color-light;
+
+        &-wrap {
+            border-left: 1px solid rgba(255,255,255,0.5);
+            padding: .5rem 1rem;
+
+            @include breakpoints(s-large) {
+                padding: 1rem 1.3rem;
+            }
+        }
+    }
+
+    &--fitcontent {
+        max-width: fit-content;
+    }
+
+    &--wrap-fix-width {
+        max-width: 260px;
+
+        @include breakpoints(large) {
+            max-width: 460px;
+        }
+    }
+}
+
+.btn-wrap-lg {
+
+    .btn-padd {
+        padding: .5rem 1rem;
+        
+        @include breakpoints(s-large) {
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+
+.btn-wrap-sm {
+    
+    .btn {
+        font-size: 1rem;
+
+        @include breakpoints(s-large) {
+            font-size: 1.2rem;
+        }
+
+        span {
+            font-size: .6rem !important;
+
+            @include breakpoints(s-large) {
+                font-size: .8rem !important;
+            }
+        }
+
+        .icon-wrap {
+            padding: 0.5rem !important;
+
+            @include breakpoints(medium) {
+                padding: 0.5rem 1rem !important;
+            }
+
+        }
+    }
+    .btn-padd {
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+
+        @include breakpoints(s-large) {
+            padding: .2rem 1.5rem;
+        }
+
+    }
+}

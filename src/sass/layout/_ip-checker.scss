@@ -1,0 +1,60 @@
+.ip-checker {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        align-items: center;
+
+        li {
+            padding: .3rem 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            @include breakpoints(medium) {
+                padding: 1rem;
+            }
+
+            a {
+                text-decoration: underline;
+                font-weight: bold;
+                color: $color-white;
+                display: block;
+            }
+
+            .icon-alarm  {
+                font-size: 1.6rem !important;
+            }
+
+        }
+    }
+
+    &__close {
+        font-size: 1.8rem;
+        cursor: pointer;
+        display: block;
+        text-decoration: none !important;
+        cursor: pointer;
+        display: block;
+
+        .icon {
+            fill: $color-white;
+            width: 15px;
+            height: 15px;
+        }
+        
+    }
+}

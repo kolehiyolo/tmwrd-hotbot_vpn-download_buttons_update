@@ -1,0 +1,6 @@
+.text-align-md-left {
+    
+    @include breakpoints(medium) {
+        text-align: left !important;
+    }
+}

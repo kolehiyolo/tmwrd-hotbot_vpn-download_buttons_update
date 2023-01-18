@@ -1,0 +1,46 @@
+.wpml-ls-legacy-dropdown{
+    width: unset !important;
+    max-width: unset !important;
+
+    .wpml-ls-sub-menu{
+        bottom: 100% !important;
+        top: inherit !important;
+        background-color: $color-white !important;
+        box-shadow: 0px 0px 14px -3px rgba(88, 89, 91, 0.3);
+        border-radius: 5px !important;
+        overflow: hidden;
+        border: none !important;
+        min-width: 160px;
+
+        @include breakpoints(s-medium) {
+            left:  unset !important;
+        }
+    }
+
+    a {
+        color: $text-color !important;
+        padding: 0.8rem 1rem !important;
+        font-size: 1.4rem !important;
+        border: none !important;
+    
+        &:hover {
+            background-color: $primary-color !important;
+            color: $color-white !important;
+        }
+    }
+
+}
+
+a.wpml-ls-item-toggle {
+    background-color: $secondary-color-darken !important;
+    color: $color-white !important;
+    border: none !important;
+    text-transform: uppercase;
+    display: inline-block !important;
+    padding-right: 35px !important;
+
+    &:hover {
+        background-color: $secondary-color-darken !important;
+    }
+}
+

@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // font-size: 55.5%;
+    scroll-behavior: smooth;
+
+    // @include breakpoints(medium) {
+    //     font-size: 62.5%;
+    // }
+
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: $font-family;
+    position: relative;
+    min-height: 100vh;
+    color: $text-color;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    background-color: #fff;
+
+    @include breakpoints(s-large) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+    }
+
+    &.fixed {
+        // position: fixed;
+        // width: 100%;
+        overflow-y: hidden;
+    }
+}
+
+.main {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.svg-sprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.container--medium {
+    max-width: 1200px !important;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-color-light {
+    color: $text-color-light;
+}
+
+.list-step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent-color-2;
+    color: $color-white;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.fit-content {
+    max-width: fit-content;
+}
+
+.wpml-ls-legacy-dropdown {
+    margin-left: auto;
+    margin-right: auto;
+
+    >ul {
+        text-align: left;
+    
+        a {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,62 @@
+.layout-section {
+    position: relative;
+
+    &--bg-color {
+        background-color: $layout-bg;
+    }
+
+    &__img-heading {
+        max-width: 280px;
+        margin: auto;
+    }
+
+    &--bg-1,
+    &--bg-1,
+    &--bg-1,
+    &--bg-1,
+    &--bg-color-dark,
+    &--bg-color-darker {
+
+        color: $color-white;
+
+        .heading-title {
+            color: $color-white;
+        }
+    }
+
+    &--bg-color-dark {
+        background-color: $secondary-color;
+    }
+
+    &--bg-color-darker {
+        background-color: $secondary-color-darken;
+    }
+
+    &--bg-1 {
+        background-color: $section-bg1;
+    }
+
+    &--bg-2 {
+        background-color: $section-bg2;
+    }
+
+    &--bg-3 {
+        background-color: $section-bg3;
+    }
+
+    &--bg-4 {
+        background-color: $section-bg4;
+    }
+
+    &.order-page-hero--blackfriday {
+        + .nav {
+            position: relative;
+            background-color: $section-bg1;
+
+            &.bg-color {
+                position: fixed;
+            }
+        }
+    }
+
+}

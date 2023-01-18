@@ -1,0 +1,69 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+
+$primary-color: #1a9efe;
+$secondary-color: #09225e;
+$secondary-color-darken: #161f37;
+$tertiary-color: #fe405c;
+$quarternary-color: #374056;
+$quetary-color: #ffc338;
+$bg-gray: #f8f9fb;
+$bg-gray-darker: #f3f3f3;
+
+$fine: #43a047;
+
+// text color
+$text-color: #5c5c66;
+$text-color-2: $secondary-color;
+$text-color-3: $primary-color;
+
+// used on footer
+$text-color-4: #ced0d8;
+$text-color-5: #707d9f;
+$border-color: #3a4b79;
+
+.text-color-primary {
+    color: $text-color-3 !important;
+
+    a {
+        color: $text-color-3 !important;
+    }
+
+    &--has-hover {
+        &:hover {
+            color: $secondary-color !important;
+        }
+    }
+}
+
+.text-color-2 {
+    color: $text-color-2;
+}
+
+.danger {
+    color: $tertiary-color !important;
+}
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family: 'noto_sansregular', Arial, Helvetica, sans-serif;
+$font-family-2: 'heebo_bold', Arial, Helvetica, sans-serif;

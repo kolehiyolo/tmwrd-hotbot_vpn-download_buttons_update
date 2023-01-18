@@ -1,0 +1,10 @@
+<svg id="magnet_l" data-name="magnet l" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="490" height="422.076" viewBox="0 0 490 422.076">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.895" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.537"/>
+      <stop offset="0.177" stop-color="#f6f6f6" stop-opacity="0.224"/>
+      <stop offset="1" stop-color="#f6f6f6" stop-opacity="0.718"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_117115" data-name="Path 117115" d="M215.019,0h-7.963C92.7,0,0,92.7,0,207.054V490H78.28V203.632A129.638,129.638,0,0,1,207.917,73.995h6.252A129.645,129.645,0,0,1,343.807,203.632V490h78.269V207.054C422.076,92.7,329.38,0,215.019,0Z" transform="translate(490) rotate(90)" fill="url(#linear-gradient)"/>
+</svg>

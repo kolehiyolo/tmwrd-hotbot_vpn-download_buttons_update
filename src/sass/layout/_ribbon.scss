@@ -1,0 +1,24 @@
+.ribbon {
+    background-color: #ffdb67;
+    color: #111111;
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    text-align: center;
+
+    &__btn {
+        background-color: #1a9efe; 
+        color: $color-white;
+        padding: .5rem 1rem;
+        border-radius: 999px;
+        transition: all .3s ease-in-out;
+        white-space: nowrap;
+    }
+
+    &:hover {
+
+        .ribbon__btn{
+            background-color: #09225e;
+        }
+    }
+}

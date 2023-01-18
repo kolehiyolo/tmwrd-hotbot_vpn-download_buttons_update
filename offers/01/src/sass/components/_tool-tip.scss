@@ -1,0 +1,43 @@
+.tool-tip {
+    position: relative;
+
+    &:before {
+        content: attr(data-original-title); /* here's the magic */
+        position:absolute;
+        
+        /* vertically center */
+        top: -34px;
+        
+        /* move to right */
+        left:50%;
+        transform: translateX(-50%);
+        
+        /* basic styles */
+        padding: .5rem .8rem;
+        border-radius: 5px;
+        background:#000;
+        color: #fff;
+        text-align:center;
+        font-size: 1.2rem;
+        display:none; 
+        white-space: nowrap;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        left:50%;
+        transform: translateX(-50%);
+        top: -8px;
+        display: none;
+    }
+
+    &:hover:before, &:hover:after {
+        display:block;
+    }
+}

@@ -1,0 +1,228 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    color: $color-white;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid transparent;
+
+    .site-brand {
+        max-width: 150px;
+
+        @include breakpoints(medium) {
+            max-width: 100%;
+        }
+
+
+        .logo {
+
+            &--blue {
+                display: none;
+            }
+        }
+    }
+
+    &__separator {
+        height: 40px;
+        width: 1px;
+        flex: 0 0 1px;
+        background-color: #b0d0d8;
+        margin: 0 28px;
+        display: none;
+    }
+
+    &.bg-color {
+        background-color: $color-white;
+
+        .nav__container{
+            padding: 1rem 1.5rem;
+            
+        }
+
+        .nav__menu-container {
+            opacity: 0;
+            position: absolute;
+            right: 30%;
+        }
+
+        .nav__menu-toggle {
+            display: none !important;
+
+            @include breakpoints(medium) {
+                display: flex !important;
+            }
+        }
+
+        .nav__separator {
+            
+            @include breakpoints(medium) {
+                display: block;
+            }
+        }
+
+        .site-brand {
+            max-width: 120px;
+
+            @include breakpoints(medium) {
+                max-width: none;
+            }
+        }
+
+    }
+
+    &.show-menu {
+        border-bottom: 1px solid #ddd;
+
+
+        .nav__menu-container {
+            opacity: 1;
+            left: unset;
+            right: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            white-space:  nowrap !important;
+
+            @include breakpoints(m-large) {
+                margin-right: -3rem;
+            }
+        }
+
+    }
+
+    &__menu-container {
+        position: relative;
+        transition: all .3s ease-in-out;
+
+        .btn {
+            display: none;
+        }
+    }
+
+
+
+    &__menu-toggle {
+        padding: 1.5rem 2rem 1.5rem 1.5rem;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        font-size: 1.5rem;
+        color: $text-color;
+        text-transform: uppercase;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            fill: lighten($text-color, 20%);
+
+        }
+
+        &:after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border: 1px solid $text-color;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-70%) rotate(-45deg);
+            position: absolute;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 1px;
+            transition: all .2s ease-in-out;
+            
+        }
+
+        &:hover {
+            ~ .nav__dropdown-menu {
+                display: block;
+            }
+
+            &:after {
+                transform: translateY(-70%) rotate(130deg);
+                transform-origin: 0;
+                right: -5px;
+            }
+        }
+
+        &.hover {
+            &:after {
+                transform: translateY(-70%) rotate(130deg);
+                transform-origin: 0;
+                right: -5px;
+            }
+        }
+    }
+
+    &__dropdown-menu {
+        border-radius: 12px;
+        font-size: 14px;
+        top: 100%;
+        z-index: 1001;
+        position: absolute;
+        display: none;
+        right: 0;
+        background-color: $color-white;
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.10%);
+        -webkit-columns: 3;
+        grid-template-columns: auto auto auto;
+        padding: 15px;
+        min-width: 245px;
+        max-width: 400px;
+
+        @include breakpoints(medium) {
+            padding: 15px 20px;
+        }
+
+        @include breakpoints(x-large) {
+            left: 50%;
+            transform: translateX(-50%);
+            right: unset;
+        }
+
+
+        &:hover {
+            display: block;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 0;
+
+            a {
+                width: 100%;
+                padding: .5rem;
+                display: block;
+                white-space: nowrap;
+                color: lighten($text-color, 20%);
+                transition: color .3s ease-in-out;
+
+                &:hover {
+                    color: darken($text-color-dark, 20%);
+                }
+            }
+        }
+    }
+
+    &__menu-checkbox[type=checkbox]:checked ~ {
+        .nav__menu-toggle {
+
+            ~ .nav__dropdown-menu {
+                display: block;
+            }
+
+            &:after {
+                transform: translateY(-70%) rotate(130deg);
+                transform-origin: 0;
+                right: -5px;
+            }
+        }
+    }
+}

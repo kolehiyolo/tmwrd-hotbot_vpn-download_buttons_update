@@ -1,0 +1,55 @@
+/*!
+Theme Name: HotBot VPN
+Theme URI: 
+Author: HotBot VPN
+Author URI: 
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hotbot
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/animations';
+
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/dropdown';
+@import 'components/rating';
+@import 'components/form';
+@import 'components/table';
+@import 'components/pagination';
+@import 'components/tab';
+@import 'components/accordion';
+@import 'components/panel';
+@import 'components/modal';
+
+@import 'layout/header';
+@import 'layout/ip-checker';
+@import 'layout/hero';
+@import 'layout/layout-section';
+@import 'layout/listing';
+@import 'layout/plan';
+@import 'layout/editor-rating';
+@import 'layout/app-nav-menu';
+@import 'layout/footer';
+@import 'layout/order-app';
+@import 'layout/order-new';
+@import 'layout/order-page-hero';
+@import 'layout/ribbon';
+@import 'layout/page';
+
+@import 'vendors/cookie';
+@import 'vendors/wpml';
+@import 'vendors/glider';
+
+@import 'base/rtl';

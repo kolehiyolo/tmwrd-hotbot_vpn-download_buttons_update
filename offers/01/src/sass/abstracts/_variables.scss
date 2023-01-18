@@ -1,0 +1,64 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+
+$primary-color: #9b59b6;
+$primary-color-darken: #804399;
+$accent-color: #D75745; //used on 1st button 
+$accent-color-2: #5AB99D; //used on 2nd button 
+$accent-color-2-darken: #1dd2af;
+$accent-color-3: #5098D5;
+
+$tertiary-color: #4ba920;
+
+//bg
+$layout-bg: #ecf0f6;
+
+
+// text color
+$text-color: #525252;
+$heading-color: #2c3e50;
+$text-color-lighter: #6c6c6c;
+
+// used on footer, parent style, don't remove
+$text-color-4: #ced0d8;
+$text-color-5: #385b83;
+$secondary-color: #09225e; 
+$secondary-color-darken: #141f39;
+$quarternary-color: #374056;
+
+$section-bg1: #232437;
+$section-bg2: #1c1d2c;
+$section-bg3: #161723;
+$section-bg4: #202132;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family: 'encode_sans_expandedlight', "Raleway", helvetica, arial !important;
+$font-family-regular: 'encode_sans_expandedregular', "Raleway", helvetica, arial !important;
+$font-family-bold: 'encode_sans_expandedbold', "Raleway", helvetica, arial !important;
+$font-family-black: 'encode_sans_expandedblack', "Raleway", helvetica, arial !important;
+
+$font-family2: "Raleway-Light", helvetica, arial !important;
+$font-family2-regular: "Raleway-Regular", helvetica, arial !important;
+$font-family2-bold: "Raleway-Bold", helvetica, arial !important;
+$font-family2-black: "Raleway-Black", helvetica, arial !important;

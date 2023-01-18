@@ -1,0 +1,14 @@
+.nav {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    background-color: $color-white;
+    transition: all .5s ease-in-out;
+
+    &--top {
+        top: 0;
+    }
+}

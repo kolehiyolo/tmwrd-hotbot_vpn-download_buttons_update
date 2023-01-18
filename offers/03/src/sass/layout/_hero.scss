@@ -1,0 +1,50 @@
+.hero {
+    background-color: $primary-color;
+    color: $color-white;
+
+    h1 {
+        font-family: $font-family-black;
+    }
+
+    .high-light {
+        background-color: $color-white;
+        color: $primary-color;
+        font-family: $font-family-black;
+    }
+
+    &__app-link-item {
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            fill: $color-white;
+            opacity: .7;
+            margin: 1rem 2rem;
+            display: block;
+            transition: opacity .3s ease-in-out;
+
+            &--lg {
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__robot-wrap {
+        position: relative;
+        max-width: 280px;
+        position: relative;
+
+        @include breakpoints(s-large) {
+            max-width: 448px;
+        }
+
+        > svg {
+            position: relative;
+        }
+    }
+}

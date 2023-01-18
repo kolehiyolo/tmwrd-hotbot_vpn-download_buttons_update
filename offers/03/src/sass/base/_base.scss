@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 55.5%;
+    scroll-behavior: smooth;
+
+    @include breakpoints(medium) {
+        font-size: 65.5%;
+    }
+}
+
+body {
+    font-family: $font-family;
+    font-size: 1.6rem;
+    position: relative;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.svg-sprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container--medium {
+    max-width: 1140px !important;
+}
+
+.flag {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+img.emoji {
+    height: 2em !important;
+    width: 2em !important;
+    position: relative;
+    top: .8rem;
+}
+
+.landerMain{
+    .menu-item-5397, .menu-item-4809 {
+        display: none;
+    }
+}

@@ -1,0 +1,148 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    .icon-arrow-link {
+        width: 20px;
+        height: 20px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.light {
+        color: $color-white;
+
+        .icon-arrow-link {
+
+            svg {
+                fill: $color-white;
+            }
+        }
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #747474;
+
+    @include breakpoints(medium) {
+        margin-bottom: 2rem;
+    }
+}
+
+small {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+ol,
+ul {
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
+ul {
+    &.no-list-style {
+        li {
+            margin-bottom: 0;
+            list-style: none;
+        }
+    }
+
+    li {
+        list-style-type: disc;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: $font-family;
+    color: $text-color-dark;
+
+}
+
+h1,
+.h1 {
+    font-size: 4rem;
+
+    @include breakpoints(s-large) {
+        font-size: 6.4rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 2.6rem;
+    
+    @include breakpoints(s-large) {
+        font-size: 3.6rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 2.6rem;
+    
+    @include breakpoints(s-large) {
+        font-size: 2.8rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 2.4rem;
+
+    @include breakpoints(s-large) {
+        font-size: 2.6rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.8rem;
+
+    @include breakpoints(s-large) {
+        font-size: 2rem;
+
+    }
+}
+
+h6,
+.h6 {
+    font-size: 1.4rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fs-x-small {
+    font-size: 1.2rem;
+}
+
+.text-danger {
+    color: #fe405c;
+}
+
+.ls {
+    letter-spacing: 1.5px;
+}

@@ -1,0 +1,272 @@
+.layout-section {
+    position: relative;
+    background-color: $color-white;
+
+    &--bg-color {
+        background: $bg-color;
+    }
+
+    &--bg-color2 {
+        background: $bg-color2;
+    }
+
+    &--bg-color-dark {
+        background: $bg-color-dark;
+        overflow: hidden;
+        
+
+        * {
+            color: $color-white;
+        }
+
+        .btn--secondary {
+            span {
+                color: $text-color !important;
+            }
+        }
+    }
+    .img-features-wrap {
+        position: relative;
+        max-width: fit-content;
+
+        .features-result {
+            position: absolute;
+            position: absolute;
+            top: -40px;
+            right: 0;
+
+            @include breakpoints(medium) {
+                right: -40px;
+                bottom: 17%;
+                top: unset;
+            }
+        }
+    
+    }
+
+    &--bg-shadow {
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(236, 244, 255));
+    }
+
+    &--bg-shadow-bottom {
+        background-image: linear-gradient(rgb(236, 244, 255), rgb(247, 246, 247));
+    }
+
+    &--bg-light-blue {
+        background: #ecf4ff;
+    }
+
+
+    &--bg-shadow-2 {
+        background-image: linear-gradient(rgb(247, 246, 247), rgb(255, 255, 255));
+    }
+
+    .absolut-content {
+
+        @include breakpoints(medium) {
+            position: absolute;
+        }
+        
+        &.left {
+            left: 4vw;
+            top: 18%;
+
+            @include breakpoints(s-large) {
+                top: 24%;
+            }
+
+            @include breakpoints(m-large) {
+                left: 8%;
+                top: 26%;
+            }
+
+            .absolut-content__item {
+                width: 14.25rem;
+
+                @include breakpoints(s-large) {
+                    width: 12.25rem;
+                }
+
+                &.first {
+
+                    @include breakpoints(medium) {
+                        position: relative;
+                        left: 2vw;
+                        top: -48px;
+                    }
+
+                    @include breakpoints(s-large) {
+                        top: -60px;
+                    }
+
+                    @include breakpoints(m-large) {
+                        top: -80px;
+                    }
+                }
+            }
+
+        }
+
+        &.right {
+
+            @include breakpoints(medium) {
+                right: -2.5rem;
+                top: 9%;
+            }
+
+            @include breakpoints(s-large) {
+                top: 7%;
+            }
+            
+
+            .absolut-content__item {
+                width: 14.25rem;
+                margin-left: auto;
+                margin-right: -10%;
+
+                @include breakpoints(medium) {
+                    margin-right: 0;
+                    width: 12.25rem;
+
+                }
+                
+                &.first {
+                    position: absolute;
+                    @include breakpoints(medium) {
+                        position: relative;
+                        top: -60px;
+                        right: 100%;
+                        transform: translateX(-60%);
+                        width: 14rem;
+                    }
+
+                    @include breakpoints(s-large) {
+                        transform: translateX(-100%);
+                    }
+
+                    @include breakpoints(m-large) {
+                        transform: translateX(-110%);
+                    }
+                }
+
+                &.second {
+                    padding-top: 12rem;
+                    padding-bottom: 1rem;
+                    
+                    @include breakpoints(medium) {
+                        position: absolute;
+                        top: -12px;
+                        padding-top: 0;
+                    }
+
+                    @include breakpoints(s-large) {
+                        top: -20px;
+                    }
+                }
+
+                &.third {
+                    padding-top: 5.5vw;
+                    padding-bottom: 15px;
+
+                    @include breakpoints(medium) {
+                        margin-right: 1.5rem;
+                    }
+
+                    @include breakpoints(s-large) {
+                        padding-top: 9vw;
+                        padding-bottom: 30px;
+                    }
+
+                    @include breakpoints(m-large) {
+                        padding-top: 125px;
+                        padding-bottom: 42px;
+                    }
+                }
+
+                &.forth {
+                    @include breakpoints(medium) {
+                        margin-right: 1.5rem;
+                    }
+
+                    @include breakpoints(s-large) {
+                        padding-top: 1.5rem;
+                    }
+                }
+
+                &.last {
+
+                    position: absolute;
+                    margin-top: 1.5rem;
+                    right: 15rem;
+
+                    @include breakpoints(medium) {
+                        right: 30rem;
+                        bottom: -7.5rem;
+                    }
+
+                    @include breakpoints(s-large) {
+                        right: 35rem;
+                        bottom: -9rem;
+                    }
+
+                    @include breakpoints(m-large) {
+                        right: 36rem;
+                        bottom: -10rem;
+                    }
+                }
+
+            }
+        }
+
+
+        &-img {
+            max-width: 60vw;
+
+            @include breakpoints(s-large) {
+                max-width: 64vw;
+            }
+
+            &-mobile-1 {
+                top: 2.5rem;
+                left: 16.125rem;
+                width: 20.875rem;
+                position: absolute;
+            }
+
+            &-mobile-2 {
+                top: 35.875rem;
+                right: 12rem;
+                width: 22.25rem;
+                position: absolute;
+            }
+        }
+    }
+
+    &.order-page-hero--blackfriday {
+        .container {
+
+            @include breakpoints(medium) {
+                padding-top: .5rem !important;
+                padding-bottom: .5rem !important;
+            }
+        }
+        .heading {
+            font-size: 1rem !important;
+        }
+        .btn {
+            padding: .4rem 1rem !important;
+            font-size: 1rem !important;
+        }
+
+        + .nav {
+            position: relative;
+            background-color: $bg-color; 
+
+            &.bg-color {
+                position: fixed;
+                background-color: $color-white;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,85 @@
+.plan {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include breakpoints(medium) {
+        justify-content: space-between;
+    }
+
+    &__saved {
+
+        text-align: left;
+        color: $color-white;
+        background-color: $tertiary-color;
+        border-radius: 3px;
+        margin: 1rem auto;
+        width: auto;
+        padding: .5rem 2rem;
+        display: inline-block;
+
+        @include breakpoints(medium) {
+            text-align: center;
+        }
+    }
+
+    &-price {
+        font-size: 2.5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        @include breakpoints(medium) {
+            font-size: 4rem;
+            line-height: 5rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include breakpoints(s-large) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+    }
+
+
+    &-header {
+        background-color: $primary-color;
+        color: $color-white;
+
+        @include breakpoints(medium) {
+            background-color: transparent;
+            color: unset;
+
+        }
+    }
+
+    &-billed {
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+
+        @include breakpoints(s-medium) {
+            font-size: 1.6rem;
+        }
+
+
+        @include breakpoints(medium) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p ~ p {
+            margin-left: 10px;
+        }
+
+        @include breakpoints(medium) {
+            margin-left: 0;
+        }
+    }
+
+    &--centered {
+        justify-content: center !important;
+    }
+}

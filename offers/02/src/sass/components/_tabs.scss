@@ -1,0 +1,47 @@
+.tab {
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            
+
+            a {
+                font-family: $font-family-bold;
+                padding: 1rem 1.6rem;
+                display: block;
+                color: rgba(255,255,255,.1);
+                
+            }
+
+            &.active {
+                a {
+                    color: $color-white;
+                }
+            }
+
+        }
+    }
+
+
+    &__pane {
+        display: none;
+        max-width: none;
+        overflow-x: auto;
+        -webkit-font-smoothing: antialiased;
+
+        &.active {
+            display: block;
+
+        }
+
+        &-item {
+            min-width: 800px;
+            position: relative;
+        }
+    }
+
+}

@@ -1,0 +1,11 @@
+.text-align-md-left {
+    @include breakpoints(medium) {
+        text-align: left !important;
+    }
+}
+
+.text-align-lg-left {
+    @include breakpoints(large) {
+        text-align: left !important;
+    }
+}

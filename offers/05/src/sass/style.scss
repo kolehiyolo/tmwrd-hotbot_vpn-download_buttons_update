@@ -1,0 +1,42 @@
+/*!
+Theme Name: HotBot VPN
+Theme URI: 
+Author: HotBot VPN
+Author URI: 
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hotbot
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+@import 'abstracts/fonts';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+@import '../../../../src/sass/base/utilities'; //default style
+@import 'base/utilities'; //overide
+@import 'base/animations';
+
+@import 'components/buttons';
+@import 'components/card';
+
+@import 'layout/header';
+@import '../../../../src/sass/layout/footer'; //default style
+@import 'layout/footer'; //override
+@import 'layout/layout-section';
+@import 'layout/hero';
+@import 'layout/listing';
+@import 'layout/plan';
+@import '../../../../src/sass/layout/ribbon'; //default style
+
+
+@import 'base/rtl';
+@import 'vendors/wpml';
+@import '../../../../src/sass/vendors/glider';
+

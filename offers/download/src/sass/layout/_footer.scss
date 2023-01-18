@@ -1,0 +1,44 @@
+.footer {
+    background-color: $tertiary-color;
+    color: #b8c1c7;
+
+    &__menu {
+
+        @include breakpoints(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #b8c1c7;
+            text-decoration: none;
+            display: block;
+            padding: .5rem 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:before {
+                @include breakpoints(medium) {
+                    content: "•";
+                    display: inline-block;
+                    text-decoration: none;
+                    position: relative;
+                    left: -15px;
+                }
+            }
+
+            &.no-dot {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+
+    p {
+        padding: .5rem 1rem;
+    }
+}

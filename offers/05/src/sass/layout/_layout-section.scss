@@ -1,0 +1,66 @@
+.layout-section {
+    position: relative;
+
+    &--bg-color {
+        background-image: linear-gradient(180deg,#e6e6e6,#f6f6f6);
+
+    }
+
+
+    &.order-page-hero--blackfriday {
+        + .nav {
+            position: relative;
+            background-color:  #c3dfe5;
+
+            &.bg-color {
+                position: fixed;
+                background-color: $color-white;
+            }
+        }
+    }
+
+}
+
+.column-bg {
+    background-size: 0%;
+
+    @include breakpoints(medium) {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center right;
+        min-height: 450px;
+    }
+    
+    &--left {
+
+        @include breakpoints(medium) {
+
+            padding: 9rem 10rem 9rem 1.5rem;
+            background-position: right;
+        }
+    }
+
+    &--right {
+
+        @include breakpoints(medium) {
+
+            padding: 9rem 1.5rem 9rem 10rem;
+            background-position: left;
+        }
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+
+.column-thumb {
+    max-width: 200px;
+    margin: auto;
+
+    @include breakpoints(medium) {
+        max-width: 100%;
+        margin: unset;
+    }
+}

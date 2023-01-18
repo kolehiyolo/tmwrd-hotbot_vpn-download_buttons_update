@@ -1,0 +1,48 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$primary-color: #0f866c;
+$accent-color: #d4e300;
+$danger: #cf1369;
+
+
+$bg-color: #f9f8f2;
+$bg-color-light: #ffffff;
+$bg-color-dark: #365996;
+
+
+// text color
+$text-color: #001d2f;
+
+// used on footer, parent style, don't remove
+$text-color-4: #ced0d8;
+$text-color-5: #385b83;
+$secondary-color: #09225e; 
+$secondary-color-darken: #141f39;
+$quarternary-color: #374056;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family: 'Raleway', arial, sans-serif !important;
+$font-family-heading: 'roboto-black-webfont', arial, sans-serif !important;

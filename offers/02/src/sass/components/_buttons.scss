@@ -1,0 +1,101 @@
+.btn {
+    color: #fff;
+    border-radius: 5px;
+    font-family: $font-family-bold;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+
+
+    &--primary {
+        background: $accent-color;
+        border: none;
+    }
+    &--primary span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5rem 2rem;
+    }
+    &--primary:before,
+    &--primary:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: $accent-color;
+        transition: all 0.3s ease;
+    }
+    &--primary:before{
+        height: 0%;
+        width: 2px;
+    }
+    &--primary:after {
+        width: 0%;
+        height: 2px;
+    }
+    &--primary:hover{
+        color: $accent-color;
+        background: transparent;
+    }
+    &--primary:hover:before {
+        height: 100%;
+    }
+    &--primary:hover:after {
+        width: 100%;
+    }
+    &--primary span:before,
+    &--primary span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: $accent-color;
+        transition: all 0.3s ease;
+    }
+    &--primary span:before {
+        width: 2px;
+        height: 0%;
+    }
+    &--primary span:after {
+        height: 2px;
+        width: 0%;
+    }
+    &--primary span:hover:before {
+        height: 100%;
+    }
+    &--primary span:hover:after {
+        width: 100%;
+    }
+        
+
+    &--span {
+        padding: 1rem 3rem;
+        background: rgba(255,255,255,.1);
+        border-radius: 32px;
+        font-size: 2.4rem;
+        line-height: 1.15;
+        letter-spacing: -.5px;
+        color: $color-white;
+        cursor: default;
+
+    }
+
+    &--span-light {
+        padding: 1.2rem 3rem;
+        background: $color-white;
+        border-radius: 32px;
+        font-size: 2.4rem;
+        line-height: 1.15;
+        letter-spacing: -.5px;
+        color: $accent-color;
+        cursor: default;
+    }
+
+}

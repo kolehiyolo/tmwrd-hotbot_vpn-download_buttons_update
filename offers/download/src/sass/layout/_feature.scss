@@ -1,0 +1,28 @@
+.feature {
+
+    &-container {
+        max-width: 268px;
+
+        @include breakpoints(s-medium) {
+            max-width: unset;
+        }
+    }
+
+    span {
+        font-weight: 800;
+        font-size: .85rem;
+        letter-spacing: 2.5px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        color: $accent-color;
+        fill: transparent;
+
+        @include breakpoints(large) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

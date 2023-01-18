@@ -1,0 +1,34 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    color: $color-white;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid transparent;
+
+    .site-brand {
+        max-width: 150px;
+
+        @include breakpoints(medium) {
+            max-width: 100%;
+        }
+    }
+
+    .btn--secondary {
+        background-color: transparent !important;
+    }
+
+    &.bg-color {
+        background-color: $bg-color;
+
+        .site-brand {
+            max-width: 120px;
+
+            @include breakpoints(medium) {
+                max-width: none;
+            }
+        }
+
+    }
+}

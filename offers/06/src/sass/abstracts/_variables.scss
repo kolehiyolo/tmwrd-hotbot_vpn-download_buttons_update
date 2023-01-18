@@ -1,0 +1,53 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 375px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+
+$primary-color: #3366FF;
+
+$danger: #e93b76;
+
+$bg-color: rgb(249,249,250);
+$bg-color2: #f7f6f7;
+$bg-color-dark: rgb(29,47,80);
+
+
+// text color
+$text-color: #161616;
+$text-color-light: #312c2c;
+$text-color-lighter: #9d9d9d;
+
+// used on footer, parent style, don't remove
+$text-color-4: #ced0d8;
+$text-color-5: #385b83;
+$secondary-color: #09225e; 
+$secondary-color-darken: #141f39;
+$quarternary-color: #374056;
+
+$section-bg1: #232437;
+$section-bg2: #1c1d2c;
+$section-bg3: #161723;
+$section-bg4: #202132;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family: 'AkzidenzGrotesk', arial, sans-serif !important;
+$font-family-secondary: 'roboto-bold-webfont', arial, sans-serif !important;

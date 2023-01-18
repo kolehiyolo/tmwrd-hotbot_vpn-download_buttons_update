@@ -1,0 +1,127 @@
+.accordion {
+    &__item {
+        border-radius: 5px;
+        border: 1px solid rgba(34,46,58,.2);
+        transition: all .3s ease-in-out;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            box-shadow: 0 2px 7px 0 rgba(34, 46, 58, 0.25%);
+        }
+    }
+
+    &__header {
+        border-bottom: 1px solid transparent;
+        padding: .8rem 2rem;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__heading {
+        color: rgba(34,46,58,.75) !important;
+        font-size: 1.4rem;
+
+        @include breakpoints(medium) {
+            font-size: 1.8rem;
+        }
+
+        @include breakpoints(large) {
+            font-size: 2rem;
+        }
+
+
+        &.is-open {
+            + .accordion__close {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    &__body {
+        padding: 0 2rem;
+        max-height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        opacity: 0;
+        transition: .3s ease-in-out;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
+    }
+
+    .currency-options {
+        background-color: transparent !important;
+    }
+
+    .payment-options {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        
+        li {
+            list-style-type: none;
+            margin: .5rem 0 .5rem .2rem;
+
+            @include breakpoints(medium) {
+                margin: .5rem 0 .5rem .5rem;
+            }
+    
+            img {
+                width: 30px;
+
+                @include breakpoints(medium) {
+                    width: 40px;
+                }
+
+                &.md {
+                    width: 70px !important;
+                }
+
+                &.sm {
+                    width: 24px;
+                    max-height: 24px;
+                }
+            }
+        }
+    
+    }
+
+    &__close {
+        width: 20px;
+        height: 20px;
+        color: $text-color;
+        fill: $text-color;
+        position: relative;
+        transition: all .2s ease-in-out;
+
+    }
+
+    &__radio-toggler[type=checkbox]:checked {
+        ~ .accordion__body {
+            max-height: 800px;
+            visibility: visible;
+            opacity: 1;
+            padding: 2rem;
+            background: #f4f5f8;
+            overflow-y: auto;
+        }
+
+        ~ .accordion__header {
+            background: #f4f5f8;
+            border-bottom: 1px solid rgba(34,46,58,.2);
+
+            .accordion__close {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+}
+
+

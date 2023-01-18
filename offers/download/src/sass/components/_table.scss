@@ -1,0 +1,129 @@
+table {
+    width: 100%;
+
+    @include breakpoints(medium) {
+        max-width: none;
+    }
+
+    thead {
+
+        tr {
+
+            th {
+                background-color: #ffffff;
+                border-left: 2px solid #ffddbf;
+                border-top: 2px solid #ffddbf;
+                max-width: 110px;
+                min-width: 110px;
+
+                &:last-of-type {
+                    border-right: 2px solid $accent-color;
+                    border-left: 2px solid $accent-color;
+                    border-top: 2px solid $accent-color;
+                }
+            }
+        }
+
+    }
+
+    tbody {
+        .icon {
+            width: 16px;
+            height: 16px;
+            color: $text-color;
+            fill: transparent;
+            margin: auto;
+            display: block;
+
+            &--light {
+                color: #a8a4c3;
+            }
+        }
+
+        tr {
+
+            th {
+                border-bottom: 1px solid #ffddbf;
+            }
+
+            td {
+                border-bottom: 1px solid #e5e8ea;
+                border-left: 2px solid #ffddbf;
+                max-width: 110px;
+                min-width: 110px;
+                background-color: #ffffff;
+
+                &:last-of-type {
+                    border-right: 2px solid $accent-color;
+                    border-left: 2px solid $accent-color;
+                }
+            }
+        }
+
+    }
+    tfoot {
+
+
+        tr {
+
+            td {
+                background-color: #ffffff;
+                border-left: 2px solid #ffddbf;
+                border-bottom: 2px solid #ffddbf;
+                max-width: 110px;
+                min-width: 110px;
+                
+                &:last-of-type {
+                    border-right: 2px solid $accent-color;
+                    border-left: 2px solid $accent-color;
+                    border-bottom: 2px solid $accent-color;
+                }
+            }
+        }
+    }
+
+    td, th {
+        padding: .7rem .5rem;
+    }
+
+    th {
+        text-align: left;
+        font-weight: normal;
+        vertical-align: baseline;
+    }
+
+    td {
+        border-bottom: 1px solid #e5e8ea;
+        // background-clip: padding-box;
+
+        &.no-border-bottom {
+            border-color: transparent;
+        }
+    }
+
+    .btn-wrap-sm {
+
+        .btn {
+
+            max-width: fit-content;
+            margin: auto;
+            min-width: 0 !important;
+
+            .icon-wrap {
+                display: none !important;
+
+                @include breakpoints(medium) {
+                    display: block !important;
+                }
+            }
+        }
+        
+        .btn-padd {
+            padding: .5rem !important;
+
+            @include breakpoints(s-large) {
+                padding: .2rem 1.5rem !important;
+            }
+        }
+    }
+}

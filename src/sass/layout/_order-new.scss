@@ -1,0 +1,180 @@
+.order-offer {
+    background-color: $secondary-color-darken;
+    background: linear-gradient(90deg, $secondary-color-darken 0%, lighten($secondary-color-darken, 15%) 100%);
+
+    text-align: center;
+    font-size: 1.4rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+
+    @include breakpoints(s-large) {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+
+    & h2 {
+        color: $color-white;
+        font-size: 2.6rem;
+        @include breakpoints(s-large) {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: 240px
+        }
+    }
+
+    & h3 {
+        color: $text-color-4;
+        font-size: 2rem;
+
+        @include breakpoints(s-large) {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: 240px
+        }
+    }
+
+    & p {
+        color: $text-color-4;
+        font-size: 1.6rem;
+
+        @include breakpoints(s-large) {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: 240px
+        }
+    }
+
+    &--bg-img {
+        position: relative;
+        background: unset;
+        background-color: unset;
+
+        & h3 {
+            color: $text-color-4;
+            font-size: 2rem;
+            line-height: normal;
+        }
+
+        .layout-section__bg {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+    
+            .img-cover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .embed-robot {
+            position: absolute;
+            width:100%;
+            max-width: 140px;
+            z-index: 2;
+            filter: drop-shadow(0 0 .75rem $primary-color);
+            left: 50%;
+            margin-left: -230px;
+            margin-top: -20px;
+
+            @include breakpoints(s-large) {
+                max-width: 270px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -20px;
+                left: unset;
+                margin-left: unset;
+                margin-top: unset;
+            }
+
+        }
+    }
+}
+
+.order-timer {
+    text-align: center;
+    background: $text-color-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    @include breakpoints(s-large) {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    & h2 {
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+
+        & span {
+            font-size: 6rem;
+            display: block;
+        }
+    }
+
+    &--v2 {
+        background: #000;
+        border-radius: 0 !important;
+
+        h2 {
+            color: $color-white;
+        }
+    }
+}
+
+.order-aside {
+    padding: 2.6rem;
+    border-radius: 0.65rem;
+    margin-bottom: 2rem;
+    background: #f7f7f7;
+
+    & .user {
+        color: darken($text-color-4, 20%);
+        display: block;
+        margin-top: 1rem;
+        font-style: italic;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+        fill: $text-color;
+    }
+}
+
+.order-guarantee {
+    background-color: #330000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: 50%;
+
+    h3 {
+        color: #fff;
+    }
+
+    & p {
+        color: $text-color-4;
+    }
+}
+
+p.terms {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    line-height: 1.4;
+
+    & a {
+        color: #1a9efe;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,25 @@
+.listing {
+    padding: 0;
+    
+    &__item {
+        .icon {
+            width: 26px;
+            height: 26px;
+            fill: $text-color-light;
+            flex-shrink: 0;
+        }
+
+    }
+
+    &--sm {
+        .listing__item {
+
+            font-size: 1.2rem;
+
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

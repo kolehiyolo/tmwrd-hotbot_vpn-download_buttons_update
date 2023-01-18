@@ -1,0 +1,47 @@
+table {
+    width: 100%;
+    border-collapse:collapse;
+    font-synthesis: none;
+
+    thead {
+        
+        tr th {
+            padding: 1rem 1.4rem;
+            text-align: center;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid $text-color;
+            font-weight: bold;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #ccd2d5;
+            
+            td {
+                padding: 1.6rem 1.4rem;
+            }
+
+            &:hover {
+                background: rgba(0,29,47,.03);
+            }
+        }
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        display: block;
+
+        &--fine {
+            fill: $primary-color
+        }
+
+        &--danger {
+            fill: $danger;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

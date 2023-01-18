@@ -1,0 +1,170 @@
+html[dir="rtl"]{
+
+    direction: rtl;
+    
+    .footer { 
+        .header--has-toggle-mobile:before {
+            left: 0;
+            right: unset !important;
+        }
+
+        .form-search .form__control, .form-search select, .form .form__control, .form select {
+            text-align: right;
+        }
+
+        .form-search .btn-search {
+            left: 30px;
+            right: unset;
+        }
+
+        &__copy-right {
+
+            @include breakpoints(medium) {
+                text-align: right !important;
+            }
+        }
+
+    }
+
+    .form-search:before, .footer .form:before {
+        right: auto;
+        left: 1.5rem;
+    }
+
+
+    nav {
+        .site-brand {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+
+
+    .mr-md-3 {
+        @include breakpoints(medium) {
+            margin-right: 0rem !important;
+            margin-left: 1rem !important;
+        }
+    }
+
+    .rtl-ml-md-0 {
+        @include breakpoints(medium) {
+            margin-left: auto !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .mr-4 {
+        margin-right: 0 !important;
+        margin-left: 1.5rem !important;
+    }
+
+
+    .btn.has-arrow, .footer .form-search .has-arrow.form__control, .footer .form-search select.has-arrow, .footer .form .has-arrow.form__control, .footer .form select.has-arrow, input.has-arrow[type=submit] {
+        direction: ltr;
+    }
+
+    .text-align-md-right {
+        @include breakpoints(medium) {
+            text-align: left !important;
+        }
+    }
+
+    .ml-md-0, .mx-md-0 {
+        @include breakpoints(medium) {
+            margin-left: unset !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .mr-md-5 {
+        @include breakpoints(medium) {
+            margin-right: 0 !important;
+            margin-left: 3rem !important;
+        }
+    }
+
+    .mr-5 {
+        margin-right: 0 !important;
+        margin-left: 3rem !important;
+    }
+
+    .mr-3 {
+        margin-right: 0 !important;
+        margin-left: 1rem !important;
+    }
+
+    .ml-3 {
+        margin-left: 0 !important;
+        margin-right: 1rem !important;
+    }
+
+    .layout-ltr {
+        direction: ltr;
+    }
+
+
+    .rtl-text-align-center--md {
+        @include breakpoints(medium) {
+            text-align: right !important;
+        }
+    }
+
+    .text-align-md-left {
+        @include breakpoints(medium) {
+            text-align: right !important;
+        }
+    }
+
+    
+    .trl-row-reverse {
+        flex-direction: row-reverse;
+
+        .mr-md-5 {
+            @include breakpoints(medium) {
+                margin-right: 3rem !important;
+                margin-left: 0 !important;
+            }
+        }
+
+        .mr-5 {
+            margin-right: 3rem !important;
+            margin-left: 0 !important;
+        }
+
+        .mr-3 {
+            margin-right: 1rem !important;
+            margin-left: 0 !important;
+        }
+
+        .ml-3 {
+            margin-left: 1rem !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .text-align-lg-left {
+        @include breakpoints(s-large) {
+            text-align: right !important;
+        }
+    }
+    
+    .ml-lg-0 {
+        @include breakpoints(s-large) {
+            margin-left: unset !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .rtl-text-align-right {
+        text-align: right;
+    }
+
+    .modal__close {
+        left: 1.5rem;
+        right: unset;
+    }
+
+
+}
+    

@@ -1,0 +1,317 @@
+.btn {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    padding-top: 1.8rem !important;
+    line-height: normal;
+    font-weight: normal;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    min-width: 150px;
+    border-radius: 5px;
+    font-family: $font-family-2;
+
+    @include breakpoints(medium) {
+        font-size: 1.8rem;
+        padding: 1.6rem 2rem;
+    }
+
+    @include breakpoints(s-large) {
+        font-size: 2rem;
+        padding: 1.6rem 3.5rem;
+        padding-top: 2rem !important;
+    }
+
+    @include breakpoints(m-large) {
+        font-size: 2.2rem;
+        padding-top: 2rem !important;
+        padding: 1.6rem 4rem;
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: $text-color-4;
+
+        &:before,
+        &:after {
+            display: none !important;
+        }
+
+        &:hover {
+            background-color: $text-color-4;
+            color: $color-white;
+            cursor: not-allowed;
+        }
+    }
+
+    &--primary, &--primary-darken {
+        background-color: $primary-color;
+        color: $color-white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+        border: 2px solid $primary-color;
+
+        span {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            background-color: $color-white;
+            color: $primary-color;
+        }
+
+    }
+
+    &--primary-darken {
+        background-color: $secondary-color !important;
+        border: 2px solid $secondary-color !important;
+
+        &:hover {
+            background-color: $color-white !important;
+            color: $secondary-color !important;
+        }
+
+        &:before {
+            background-color: $secondary-color !important;
+        }
+
+        &:after {
+            border: 2px solid $secondary-color !important;
+        }
+
+        &.btn.has-arrow {
+
+            .icon-right {
+            
+                fill: $color-white !important;
+            }
+
+
+            &:hover {
+                .icon-right {
+                    fill: $secondary-color !important;
+                }
+            }
+        }
+    }
+
+    &--secondary {
+        background-color: $color-white;
+        color: $primary-color;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+
+        span {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            color: $color-white;
+        }
+
+        &.has-arrow {
+
+            .icon-right {
+            
+                fill: $primary-color;
+            }
+
+
+            &:hover {
+                .icon-right {
+                    position: relative;
+                    left: 1.5rem;
+                    fill: $color-white !important;
+                }
+            }
+        }
+    }
+    &--fine {
+        background-color: $fine;
+        color: $color-white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: lighten($fine, 10%);
+        }
+    }
+    &--proccess{
+        background-color: $primary-color;
+        color: $color-white;
+        
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+
+    &--caution{
+        background-color: $quetary-color;
+        
+        &:hover {
+            background-color: darken($quetary-color, 10%);
+        }
+    }
+
+    &--danger {
+        background-color: $tertiary-color;
+        color: $color-white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+        border: 2px solid $tertiary-color;
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:hover {
+            background-color: #ff5f75;
+            color: $color-white;
+        }
+    }
+
+    &--sm {
+        padding: 0.6rem 2rem;
+        font-size: 1.6rem;
+        min-width: auto;
+        padding-top: 1rem !important;
+
+        @include breakpoints(s-large) {
+            font-size: 1.8rem;
+        }
+
+        @include breakpoints(m-large) {
+            padding: 1.2rem 4rem;
+            padding-top: 1.4rem !important;
+        }
+    }
+
+    &--xs {
+        min-width: auto;
+        font-size: 1.8rem;
+        padding: .8rem 2rem;
+        padding-top: 1rem !important;
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    &--block-sm {
+        width: 100%;
+
+        @include breakpoints(s-medium) {
+            width: auto;
+        }
+    }
+
+    &.has-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // width: 100%;
+
+        @include breakpoints(medium) {
+            width: max-content;
+        }
+
+        &:hover {
+            .icon-right {
+                position: relative;
+                left: 1.5rem;
+                fill: $primary-color;
+            }
+        }
+    }
+
+    .icon-right {
+        position: relative;
+        left: 1rem;
+        transition: all 0.2s ease-in-out;
+        height: 20px;
+        width: 20px;
+        fill: $color-white;
+    }
+
+    &-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include breakpoints(medium) {
+            justify-content: flex-start;
+            // flex-wrap: nowrap;
+        }
+
+        a {
+            margin: 5px;
+            // max-width: 45%;
+
+            &:first-of-type {
+                @include breakpoints(medium) {
+                    margin-left: 0;
+                }
+            }
+
+            @include breakpoints(medium) {
+                margin: 10px;
+            }
+
+            img {
+                width: auto;
+                max-width: 100%;
+                height: 40px;
+
+                @include breakpoints(s-medium) {
+                    height: 50px;
+                }
+            }
+        }
+
+        &--center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            a {
+                display: block;
+            }
+        }
+    }
+
+    &[loading='true'] {
+        background-color: darken($primary-color, 15%) !important;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        .lds-ellipsis {
+            display: inline-block;
+            + span {
+                display: none;
+            }
+        }
+    }
+}

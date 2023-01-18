@@ -1,0 +1,17 @@
+.myos-android .os-android, .myos-apple .os-apple, .myos-ipad .os-ipad, .myos-iphone .os-iphone, .myos-windows .os-windows {
+    display: block !important;
+}
+
+.text-align-md-left {
+
+    @include breakpoints(medium) {
+        text-align: left !important;
+    }
+}
+
+.text-align-lg-left {
+
+    @include breakpoints(s-large) {
+        text-align: left !important;
+    }
+}

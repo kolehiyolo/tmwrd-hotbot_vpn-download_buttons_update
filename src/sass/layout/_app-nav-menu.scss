@@ -1,0 +1,29 @@
+.app-nav-menu {
+
+    &__link {
+        font-size: 1.4rem;
+        display: block;
+
+        &:hover, &.active {
+            & .app-nav-menu__icon {
+                fill: $primary-color;
+            }
+        }
+    }
+
+    &__icon{
+        display: block;
+        font-size: 3rem;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 1rem;
+        transition: all .3s ease-out;
+        fill: $text-color;
+
+        @include breakpoints(medium) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}

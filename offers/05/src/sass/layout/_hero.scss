@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+    text-align: center;
+
+    @include breakpoints(medium) {
+        text-align: unset;
+    }
+    
+
+    
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(1turn,#fff,#c3dfe5);
+
+    }
+
+
+    &__robot-wrap {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        min-width: 120%;
+        right: 0;
+        z-index: 0;
+
+        @include breakpoints(m-large) {
+            min-width: 150%;
+            right: -10%;
+        }
+    }
+
+    &__left-content {
+        position: relative;
+        z-index: 1;
+    }
+
+}

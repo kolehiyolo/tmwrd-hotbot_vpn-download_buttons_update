@@ -1,0 +1,132 @@
+.order-page-hero {
+    color: $color-white;
+    padding-bottom: 20px;
+
+    .heading {
+        color: $color-white;
+
+        span {
+            color: $color-white;
+        }
+
+    }
+
+    .layout-section__bg {
+        background-color: $secondary-color;
+        overflow: hidden;
+
+        embed {
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        &--reddit {
+            background-color: #ff682c;
+
+            .img-reddit-dots {
+                position: absolute;
+                width: 98%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 1760px;
+            }
+
+            .img-reddit-logo {
+                position: absolute;
+                right: -78px;
+                width: 100%;
+                max-width: 300px;
+                top: 76%;
+                transform: translateY(-50%) rotate(-45deg);
+
+                @include breakpoints(s-medium) {
+                    right: -90px;
+                    max-width: 270px;
+                    top: 55%;
+                    transform: translateY(-50%) rotate(-74deg);
+                }
+
+                @include breakpoints(medium) {
+                    right: -60px;
+                    max-width: 270px;
+                    top: 70%;
+                    transform: translateY(-50%) rotate(-45deg);
+                }
+
+                @include breakpoints(large) {
+                    max-width: 280px;
+                    top: 66%;
+                }
+
+                @include breakpoints(m-large) {
+                    right: 0;
+                    max-width: 400px;
+                    top: 48%;
+                    transform: translateY(-50%) rotate(0);
+                }
+
+                @include breakpoints(x-large) {
+                    right: 10%;
+                    max-width: 400px;
+                    top: 48%;
+                }
+                
+            }
+        }
+    }
+
+    .embed-robot {
+        display: none;
+        @include breakpoints(large) {
+            display: block;
+            width: 100%;
+            filter: drop-shadow(0 0 .75rem $primary-color);
+            position: relative;
+            z-index: 2;
+            transform: rotate(-17deg);
+            max-width: 170px;
+            margin: -76px 0 -82px -170px
+
+        }
+
+        &--no-shadow {
+            filter: none;
+        }
+
+    }
+
+    p {
+        filter: drop-shadow(0 0 0.15rem $primary-color);
+
+        &.no-shaddow {
+            filter: none;
+        }
+    }
+
+    &__icon-container {
+        width: 36px;
+        flex-shrink: 0;
+        margin-right: 2rem;
+
+        @include breakpoints(medium) {
+            width: 40px;
+            margin-right: 3rem;
+        }
+    }
+}
+
+.coupon-field {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.coupon-toggler[type=checkbox]:checked ~ {
+    .coupon-field {
+        max-height: 200px;
+        visibility: visible;
+        opacity: 1;
+    }
+}

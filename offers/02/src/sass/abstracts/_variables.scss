@@ -1,0 +1,52 @@
+//responsive breakpoints
+$breakpoints: (
+    x-small: 320px,
+    small: 480px,
+    s-medium: 576px,
+    medium: 768px,
+    s-large: 992px,
+    large: 1024px,
+    m-large: 1300px,
+    x-large: 1600px,
+    xx-large: 2800px,
+);
+
+$color-white: #ffffff;
+
+$primary-color: #222e3a;
+$primary-color-darken: #804399;
+$accent-color: #ff4c64; //used on 1st button
+$accent-color-light: #fe7085; 
+$accent-color-2: #00b065; //used on 2nd button and check
+
+$bg-color: rgba(255,255,255,.0509804);
+
+//bg
+
+
+// text color
+$text-color: rgba(255,255,255,.75);
+$heading-color: #2c3e50;
+
+// used on footer, parent style, don't remove
+$text-color-4: #ced0d8;
+$text-color-5: #385b83;
+$secondary-color: #09225e; 
+$secondary-color-darken: #141f39;
+$quarternary-color: #374056;
+
+
+$themes: (
+    light: (
+        backgroundLight: #fff,
+    ),
+    dark: (
+        backgroundLight: #000,
+    ),
+);
+
+$font-family-light: 'robotolight', "Raleway", helvetica, arial !important;
+$font-family: 'robotoregular', "Raleway", helvetica, arial !important;
+$font-family-medium: 'medium', "Raleway", helvetica, arial !important;
+$font-family-bold: 'robotobold', "Raleway", helvetica, arial !important;
+$font-family-black: 'robotoblack', "Raleway", helvetica, arial !important;

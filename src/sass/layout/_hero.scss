@@ -1,0 +1,317 @@
+.hero {
+    min-height: 100%;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: #eff0f4;
+        width: 66vw;
+        height: 100vw;
+        transform: rotate(-20deg);
+        bottom: 30%;
+        right: -15%;
+        border-radius: 20px;
+        display: none;
+
+        @include breakpoints(medium) {
+            display: block;
+        }
+    }
+
+    @include breakpoints(medium) {
+        padding-bottom: 5rem;
+    }
+
+    &__app {
+        width: 150px;
+        margin: 30px auto;
+        position: relative;
+        border-radius: 20px;
+        transition: all .3s ease-out;
+        top: 0;
+
+        &.hidden {
+            opacity: 0;
+            top: 50px;
+        }
+
+        &.show {
+
+            .device-app,
+            .hero-connect-app,
+            .hero-settings-app,
+            .hero-cloud-app,
+            .hero-signal-app,
+            .hero-shield-app {
+                opacity: 1;
+            }
+
+            .device-app {
+                left: -20px;
+            }
+
+            .hero-connect-app {
+                top: 20px;
+
+                @include breakpoints(s-large) {
+                    top: 50px;
+                }
+            }
+
+            .hero-settings-app {
+                left: -70px;
+
+                @include breakpoints(s-large) {
+                    left: -140px;
+                }
+            }
+
+            .hero-cloud-app {
+                top: 10px;
+
+                @include breakpoints(s-large) {
+                    top: 20px;
+                }
+            }
+
+            .hero-shield-app {
+                right: -80px;
+
+                @include breakpoints(s-large) {
+                    right: -170px;
+                }
+            }
+
+            .hero-signal-app {
+                bottom: 55px;
+
+                @include breakpoints(s-large) {
+                    bottom: 125px;
+                }
+            }
+
+        }
+
+        @include breakpoints(s-large) {
+            width: 270px;
+            margin: 50px auto;
+
+        }
+
+        img {
+            box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+            transition: all .3s ease-out;
+
+        }
+
+        .device {
+            border-radius: 10px;
+            box-shadow: 0 12px 80px -20px rgba(50, 50, 93, .25), 0 -10px 60px -30px rgba(0, 0, 0, .3);
+
+            @include breakpoints(s-large) {
+                border-radius: 20px;
+            }
+        }
+
+        .device-app {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            border-radius: 10px;
+            box-shadow: 0 12px 80px -20px rgba(50, 50, 93, .25), 0 -10px 60px -30px rgba(0, 0, 0, .3);
+            opacity: 0;
+            transition-delay: .2s;
+        }
+
+        .hero-connect-app {
+            position: absolute;
+            top: 0px;
+            left: -32px;
+            border-radius: 10px;
+            max-width: 40px;
+            box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.7), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition-delay: .4s;
+
+            @include breakpoints(s-large) {
+                left: -50px;
+                border-radius: 10px;
+                max-width: 70px;
+            }
+        }
+
+        .hero-settings-app {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            border-radius: 15px;
+            max-width: 60px;
+            opacity: 0;
+            transition-delay: .8s;
+
+            @include breakpoints(s-large) {
+                top: 200px;
+                border-radius: 15px;
+                max-width: 120px;
+            }
+        }
+
+        .hero-cloud-app {
+            position: absolute;
+            top: 0;
+            right: -20px;
+            border-radius: 10px;
+            max-width: 40px;
+            opacity: 0;
+            transition-delay: 1s;
+
+            @include breakpoints(s-large) {
+                right: -50px;
+                border-radius: 10px;
+                max-width: 70px;
+            }
+        }
+
+        .hero-shield-app {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            border-radius: 15px;
+            max-width: 70px;
+            opacity: 0;
+            transition-delay: 1.2s;
+
+            @include breakpoints(s-large) {
+                top: 150px;
+                border-radius: 15px;
+                max-width: 150px;
+            }
+        }
+
+        .hero-signal-app {
+            position: absolute;
+            bottom: 0;
+            right: -50px;
+            border-radius: 10px;
+            max-width: 40px;
+            box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.7), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition-delay: .6s;
+
+            @include breakpoints(s-large) {
+                right: -90px;
+                border-radius: 15px;
+                max-width: 70px;
+            }
+        }
+
+        &.desktop {
+            width: 100%;
+
+            @include breakpoints(s-large) {
+                width: 80%;
+                margin: auto;
+            }
+
+            .device-desktop {
+                box-shadow: none;
+            }
+
+            .hero-connect-app {
+                top: 50%;
+                left: 50%;
+                transform: scale(0.5);
+            
+                @include breakpoints(s-large) {
+                    top: 50px;
+                }
+            }
+
+            .hero-settings-app {
+                top: 50%;
+                left: 50%;
+                transform: scale(0.5);
+            
+            }
+
+            .hero-cloud-app {
+                top: 40%;
+                right: 50%;
+                transform: scale(0.5);
+
+            }
+
+            .hero-shield-app {
+                right: 40%;
+                top: 30%;
+                transform: scale(0.5);
+            }
+
+            .hero-signal-app {
+                bottom: 30%;
+                right: 40%;
+                transform: scale(.5);
+            }
+
+            &.show {
+                .hero-connect-app {
+
+                    top: 10%;
+                    left: 5%;
+                    transform: scale(1);
+
+                    @include breakpoints(s-large) {
+                        left: 4%;
+                    }
+                
+                }
+
+                .hero-settings-app {
+                    left: 0%;
+                    top: 50%;
+                    transform: scale(1);
+                
+                    @include breakpoints(s-large) {
+                        left: -2%;
+                        top: 56%;
+                        transform: scale(0.8);
+                    }
+                }
+
+                .hero-cloud-app {
+                    top: 10%;
+                    right: 5%;
+                    transform: scale(1);
+
+                }
+
+                .hero-shield-app {
+                    right: 0;
+                    top: 40%;
+                    transform: scale(1);
+                    
+                    @include breakpoints(s-large) {
+                        right: -22%;
+                        top: 25%;
+                        transform: scale(.8);
+                    }
+                }
+
+                .hero-signal-app {
+
+                    bottom: 12%;
+                    right: 8%;
+                    transform: scale(1);
+    
+                    @include breakpoints(s-large) {
+
+                        right: 5%;
+                        bottom: 14%;
+
+                    }
+                }
+            }
+        }
+    }
+}
